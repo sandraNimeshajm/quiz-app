@@ -6,3 +6,123 @@
   font-style: normal;
   font-display: swap;
 }
+
+.roboto-48-normal {
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  font-weight: normal;
+
+  @include mq(1400) {
+    font-size: 42px;
+  }
+
+  @include mq(1280) {
+    font-size: 40px;
+  }
+
+  @include mq(991) {
+    font-size: 32px;
+  }
+
+  @include mq(768) {
+    font-size: 24px;
+  }
+
+  @include mq(480) {
+    font-size: 20px;
+  }
+}
+
+.roboto-42-bold {
+  font-family: "Roboto", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+
+  @include mq(1400) {
+    font-size: 40px;
+  }
+
+  @include mq(1280) {
+    font-size: 32px;
+  }
+
+  @include mq(991) {
+    font-size: 24px;
+  }
+
+  @include mq(768) {
+    font-size: 20px;
+  }
+
+  @include mq(480) {
+    font-size: 16px;
+  }
+}
+
+.roboto-32-normal {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-weight: normal;
+
+  @include mq(1400) {
+    font-size: 24px;
+  }
+
+  @include mq(1280) {
+    font-size: 20px;
+  }
+
+  @include mq(991) {
+    font-size: 16px;
+  }
+
+  @include mq(768) {
+    font-size: 14px;
+  }
+}
+
+.roboto-24-medium {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+
+  @include mq(1400) {
+    font-size: 20px;
+  }
+
+  @include mq(1280) {
+    font-size: 18px;
+  }
+
+  @include mq(991) {
+    font-size: 16px;
+  }
+
+  @include mq(768) {
+    font-size: 14px;
+  }
+}
+
+.roboto-16-normal {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+@include mq(1921, min) {
+  .roboto-48-normal {
+    font-size: 2.5vw;
+  }
+  .roboto-42-bold {
+    font-size: 2.1875vw;
+  }
+  .roboto-32-normal {
+    font-size: 1.66667vw;
+  }
+  .roboto-24-medium {
+    font-size: 1.25vw;
+  }
+  .roboto-16-normal {
+    font-size: 0.83333vw;
+  }
+}

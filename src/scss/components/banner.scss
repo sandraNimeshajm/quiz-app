@@ -7,8 +7,18 @@
 }
 
 .banner__title {
+  @extend .roboto-48-normal;
   max-width: 600px;
   width: 100%;
-  font-size: 48px;
   color: $white;
+  text-align: center;
+}
+
+@include mq(1921, min) {
+  .banner {
+    margin-bottom: 2.5vw;
+  }
+  .banner__title {
+    max-width: 31.25vw;
+  }
 }

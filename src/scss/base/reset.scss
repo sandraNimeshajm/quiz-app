@@ -5,6 +5,7 @@
 }
 
 body {
+  @extend .roboto-16-normal;
   background: linear-gradient(122.76deg, $blue -35.72%, $blue-light 172.73%);
   background-repeat: no-repeat;
   background-size: cover;
@@ -67,4 +68,11 @@ textarea,
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+@include mq(1921, min) {
+  .wrapper {
+    max-width: 86.45833vw;
+    padding: 0 1.25vw;
+  }
 }

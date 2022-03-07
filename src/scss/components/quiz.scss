@@ -6,7 +6,18 @@
 }
 
 .quiz__wrapper {
-  padding: 92px 54px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  @include mq(991) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  @include mq(768) {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
 }
 
 .quiz__header {
@@ -16,12 +27,20 @@
   margin-bottom: 32px;
 
   h2 {
+    @extend .roboto-32-normal;
     margin-right: 16px;
-    font-size: 32px;
   }
 
   span {
-    font-size: 32px;
+    @extend .roboto-32-normal;
+  }
+
+  @include mq(991) {
+    margin-bottom: 24px;
+  }
+
+  @include mq(768) {
+    margin-bottom: 16px;
   }
 
   @include mq(450) {
@@ -34,7 +53,7 @@
 
   @include mq(450) {
     margin-right: 0;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
   }
 }
 
@@ -45,9 +64,6 @@
   justify-content: center;
 }
 
-.quiz__content {
-  margin-bottom: 16px;
-}
 .quiz__content-btn-box {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -58,6 +74,15 @@
 
   @include mq(991) {
     grid-template-columns: 1fr;
+    margin-bottom: 48px;
+  }
+
+  @include mq(768) {
+    margin-bottom: 32px;
+  }
+
+  @include mq(480) {
+    margin-bottom: 24px;
   }
 }
 
@@ -71,13 +96,56 @@
 }
 
 .question-text {
-  font-size: 42px;
-  font-weight: 700;
+  @extend .roboto-42-bold;
   color: $blue;
   text-align: center;
   margin-bottom: 64px;
+
+  @include mq(991) {
+    margin-bottom: 48px;
+  }
+
+  @include mq(768) {
+    margin-bottom: 32px;
+  }
+
+  @include mq(480) {
+    margin-bottom: 24px;
+  }
 }
 
 .hide {
   display: none;
+}
+
+@include mq(1921, min) {
+  .quiz {
+    margin-top: 3.33333vw;
+    border-top-right-radius: 1.66667vw;
+    border-top-left-radius: 1.66667vw;
+  }
+  .quiz__wrapper {
+    padding-top: 5.20833vw;
+    padding-bottom: 5.20833vw;
+  }
+  .quiz__header {
+    margin-bottom: 1.66667vw;
+    h2 {
+      margin-right: 0.83333vw;
+    }
+  }
+  .quiz__header-score {
+    margin-right: 1.66667vw;
+  }
+  .quiz__content-btn-box {
+    grid-gap: 0.625vw;
+    margin-bottom: 3.33333vw;
+  }
+  .quiz__controls {
+    grid-gap: 0.625vw;
+    margin-bottom: 1.66667vw;
+  }
+  .question-text {
+    margin-bottom: 3.33333vw;
+  }
 }
