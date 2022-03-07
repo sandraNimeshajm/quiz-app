@@ -1,112 +1,70 @@
-html,
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -ms-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
-  width: 100%;
+*,
+::before,
+::after {
+  box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-  box-sizing: border-box;
+body {
+  background: linear-gradient(122.76deg, $blue -35.72%, $blue-light 172.73%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+ul,
+ol {
   margin: 0;
   padding: 0;
-  -webkit-tap-highlight-color: transparent;
+  list-style: none;
 }
 
-html {
-  font-size: 100%;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
-a {
-  text-decoration: none;
-}
-
-a:focus,
-a:hover,
-a:active {
-  outline: none;
+p,
+figure {
+  margin: 0;
+  padding: 0;
 }
 
 b,
 strong {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 hr {
   display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
   margin: 1em 0;
   padding: 0;
-}
-
-nav ul,
-nav ol,
-ul,
-li {
-  list-style: none;
-  list-style-image: none;
-}
-
-img {
+  height: 1px;
   border: 0;
-  -ms-interpolation-mode: bicubic;
-  vertical-align: middle;
+  border-top: 1px solid $black;
 }
 
+a,
+area,
 button,
 input,
+label,
 select,
-textarea {
-  vertical-align: middle;
-}
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  cursor: pointer;
-  -webkit-appearance: button;
-  overflow: visible;
-}
-button[disabled],
-input[disabled] {
-  cursor: default;
-}
-input,
-textarea {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-textarea {
-  overflow: auto;
-  vertical-align: top;
-  resize: vertical;
-}
-
-input,
 textarea,
-select {
-  outline: none;
+[tabindex] {
+  touch-action: manipulation;
 }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-td {
-  vertical-align: top;
+.wrapper {
+  max-width: 1660px;
+  width: 100%;
+  padding: 0 24px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

@@ -5,4 +5,10 @@
 @import "./base/fonts";
 @import "./base/base";
 
+/* Helpers*/
+@import "./helpers/buttons";
+
 /* Components */
+@import "./components/header";
+@import "./components/banner";
+@import "./components/quiz";

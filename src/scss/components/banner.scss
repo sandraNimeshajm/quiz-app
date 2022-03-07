@@ -1,0 +1,14 @@
+.banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+
+.banner__title {
+  max-width: 600px;
+  width: 100%;
+  font-size: 48px;
+  color: $white;
+}

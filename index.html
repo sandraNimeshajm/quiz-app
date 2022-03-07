@@ -5,9 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz app</title>
+    <link rel="icon" type="image/x-icon" href="./src/images/favicon.png" />
     <link rel="stylesheet" href="./dist/style.css" />
   </head>
   <body>
+    <header class="header">
+      <div class="header__logo-box">
+        <img src="./src/images/logo.png" alt="Logo" class="header__logo" />
+      </div>
+    </header>
+    <main>
+      <section class="banner">
+        <div class="banner__wrapper wrapper">
+          <h1 class="banner__title">Let's test your knowledge!</h1>
+        </div>
+      </section>
+
+      <section class="quiz">
+        <div class="quiz__wrapper wrapper">
+          <div class="quiz__header">
+            <div class="quiz__header-score">
+              <h2>Score:</h2>
+              <span class="user-score">0</span>
+              <span> / </span>
+              <span class="total-score">0</span>
+            </div>
+
+            <div class="quiz__header-number">
+              <h2>Question:</h2>
+              <span class="num-of-question">0</span>
+              <span> / </span>
+              <span class="total-questions">0</span>
+            </div>
+          </div>
+          <div class="quiz__content | question-area">
+            <div class="question-text"></div>
+            <div class="quiz__content-btn-box">
+              <button class="btn btn-full quiz__content-btn | first">
+                True
+              </button>
+              <button class="btn btn-full quiz__content-btn | second">
+                False
+              </button>
+            </div>
+          </div>
+          <div class="quiz__controls">
+            <button
+              class="btn btn-ghost quiz__controls-btn btn-restart | restart"
+            >
+              Restart
+            </button>
+
+            <button class="btn btn-ghost quiz__controls-btn btn-next | next">
+              Next
+            </button>
+            <button
+              class="btn btn-ghost quiz__controls-btn btn-submit | submit"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="./dist/main.js"></script>
   </body>
 </html>
